@@ -24,15 +24,6 @@ class Article:
     def dict(self) -> dict:
         return asdict(self)
 
-# Class represents information about the language a user would like to listen to their article in - might be unnecessary
-@dataclass
-class Lanuage:
-    lang: str
-
-    # Represents instance as dictionary
-    def dict(self) -> dict:
-        return asdict(self)
-
 # Class represents the text to speech service (find articles, translation, SSML conversion, audio generation)
 class Audicle:
     
